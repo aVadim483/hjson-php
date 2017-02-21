@@ -1,0 +1,43 @@
+{
+    "key": "value",
+    // omit quotes for strings
+    str-2: everything /* skip comment */ on this line // skip other comment
+    // omit commas at the end of a line
+    cool: {
+        int:    1       // integer
+        float: .2       // float
+        bool:   true    // boolean
+    }
+    // allow trailing commas
+    list: [
+        1,
+        2,
+    ]
+    // unicode can be in quoted string
+    quoted-string: ["This is unicode symbol \u00e9, but this not (double back slash) \\u00f9", "just string"]
+    // unicode can be in unquoted string
+    unquoted-string: This is unicode symbol \u00e9, but this not (double back slash) \\u00f9
+    multiline: "the first line
+                the second line"
+    // and use multiline strings with '''
+    realist:
+    '''
+    one
+    two
+    thre
+    '''
+    # specify rate in requests/second (because comments are helpful!)
+    rate: 1000
+
+    // prefer c-style comments?
+    /* feeling old fashioned? */
+
+      # did you notice that rate doesn't need quotes?
+      hey: look ma, no quotes for strings either!
+
+      # best of all
+      notice: []
+      anything: ?
+
+      # yes, commas are optional!
+}

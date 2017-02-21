@@ -10,8 +10,8 @@
     }
     // allow trailing commas
     list: [
-        1,
-        2,
+        1,  // Cyrillic chars: это комментарий по-русски
+        2,  // and Chinese 漢語
     ]
     // unicode can be in quoted string
     quoted-string: ["This is unicode symbol \u00e9, but this not (double back slash) \\u00f9", "just string"]
